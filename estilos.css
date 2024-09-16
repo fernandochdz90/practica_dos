@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.encabezado {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(217, 237, 247);
+    padding: 10px;
+}
+
+.titulo h1 {
+    margin: 0;
+    color: rgb(114,169,199);
+}
+
+.form-container {
+    max-width: 70vw; /* Ajustar el ancho del contenedor según el viewport */
+    margin: 50px auto;
+    padding: 40px; /* Aumentar el padding para dar más espacio interno */
+    background-color: #bdbfc1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #555555;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+    width: 90%; /* Ajustar ancho al 90% del contenedor */
+    margin: 0 auto; /* Centrar los inputs */
+    display: block; /* Asegurarse de que los inputs ocupen toda la línea */
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Asegura que use todo el espacio del contenedor */
+}
+
+.input-group select {
+    text-align: left; /* Alinear el texto a la izquierda */
+    padding: 10px;
+    min-width: 200px; /* Define un ancho mínimo para que el texto entre sin problemas */
+    width: auto; /* Permitir que el ancho se ajuste automáticamente */
+    white-space: nowrap; /* Evitar que el texto se corte o salte a la siguiente línea */
+    overflow: hidden; /* Esconder cualquier contenido que se desborde */
+    text-overflow: ellipsis; /* Si el texto se desborda, mostrar '...' */
+    box-sizing: border-box; /* Asegurar que el padding no cause desbordamiento */
+}
+
+.input-group button {
+    width: auto; /* Permitir que el botón se ajuste automáticamente al contenido */
+    padding: 10px 20px; /* Ajustar padding: 10px para arriba/abajo, 20px para izquierda/derecha */
+    background-color: #033E8C;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 2%;
+    text-align: center; /* Asegura que el texto esté centrado */
+    white-space: nowrap; /* Evitar que el texto se parta en varias líneas */
+}
+
+button:hover {
+    background-color: #002a6d;
+}

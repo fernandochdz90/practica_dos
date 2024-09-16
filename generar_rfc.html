@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de RFC - Practica Uno</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Incluir jQuery desde un CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="encabezado">
+            <div class="titulo custom-title">
+                <h1>PRÁCTICA 2. SIMULADOR DE RFC</h1>
+            </div>
+        </header>
+
+        <div class="form-container">
+            <h2>Simulador de RFC</h2>
+            <form id="rfc-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellidoPaterno">Apellido Paterno:</label>
+                    <input type="text" id="apellidoPaterno" placeholder="Ingresa tu apellido paterno" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellidoMaterno">Apellido Materno:</label>
+                    <input type="text" id="apellidoMaterno" placeholder="Ingresa tu apellido materno" required>
+                </div>
+                <div class="form-group">
+                    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fechaNacimiento" required>
+                </div>
+                <div class="form-group">
+                    <button type="button" id="generarRFC">Generar RFC</button>
+                </div>
+                <div class="form-group">
+                    <label for="resultadoRFC">RFC:</label>
+                    <input type="text" id="resultadoRFC" readonly>
+                </div>
+            </form>
+        </div>
+
+        <div class="navigation">
+            <button type="button" onclick="window.location.href='api.html'">Ir a Consultar API</button>
+        </div>
+    </div>
+
+    <!-- Script de jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="funcionalidad.js"></script>
+</body>
+
+</html>
