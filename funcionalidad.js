@@ -7,9 +7,10 @@ $('#generarRFC').on('click', function() {
 
     if (nombre && apellidoPaterno && apellidoMaterno && fechaNacimiento.length === 3) {
         var rfc = apellidoPaterno.substring(0, 2) + apellidoMaterno.charAt(0) + nombre.charAt(0) + fechaNacimiento[0].substring(2, 4) + fechaNacimiento[1] + fechaNacimiento[2];
-        $('#resultadoRFC').text('RFC generado: ' + rfc);
+        // Usar .val() en lugar de .text()
+        $('#resultadoRFC').val(rfc);
     } else {
-        $('#resultadoRFC').text('Por favor, llena todos los campos correctamente.');
+        $('#resultadoRFC').val('Por favor, llena todos los campos correctamente.');
     }
 });
 
